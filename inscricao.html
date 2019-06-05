@@ -7,69 +7,78 @@
     <link rel="shortcut icon" href="img/favicon.jpg">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/inscricao.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div>
-        <h1>Inscreva-se</h1>
-    </div>
+    <header>
+        <div class="titulo-principal">
+            <h1>Inscreva-se</h1>
+        </div>
+    </header>
 
-    <form>
-        <fieldset>
-            <legend>Seus dados</legend>
-            <label for="nome">Nome completo</label>
-            <input id="nome" type="text" name="nome" required autofocus pattern="[A-Za-z ']{4,}"
-                title="O nome precisa ter pelo menos 4 caracteres">
-            <label for="email">E-mail</label>
-            <input id="email" type="email" name="email" required placeholder="seu@email.com">
-        </fieldset>
+    <main>
+        <div class="texto-inscricao">
+            <p>Faça parte desse time se inscrevendo na próxima edição do programa de bolsas.</p>
+        </div>
+        <form>
+            <fieldset>
+                <label for="nome">Nome completo</label>
+                <input id="nome" type="text" name="nome" required autofocus pattern="[A-Za-z ']{4,}"
+                    title="O nome precisa ter pelo menos 4 caracteres">
+                <label for="email">E-mail</label>
+                <input id="email" type="email" name="email" required placeholder="seu@email.com">
+            </fieldset>
 
-        <fieldset>
-            <legend>Maior disponibilidade</legend>
-            <label>
-                <input type="radio" name="assunto" value="Blog">
-                Manhã
-            </label>
-            <label>
-                <input type="radio" name="assunto" value="Serviço">
-                Tarde
-            </label>
-            <label>
-                <input type="radio" name="assunto" value="Serviço">
-                Noite
-            </label>
-            <label>
-                <input type="radio" name="assunto" value="Outro">
-                Personalizar
-                <input type="text" name="outro-assunto">
-            </label>
-        </fieldset>
+            <fieldset>
+                <legend>Maior disponibilidade</legend>
+                <label>
+                    <input type="radio" name="assunto" value="Blog">
+                    Manhã
+                </label>
+                <label>
+                    <input type="radio" name="assunto" value="Serviço">
+                    Tarde
+                </label>
+                <label>
+                    <input type="radio" name="assunto" value="Serviço">
+                    Noite
+                </label>
+                <label>
+                    <input type="radio" name="assunto" value="Outro">
+                    Personalizar
+                    <input type="text" name="outro-assunto">
+                </label>
+            </fieldset>
 
-        <fieldset>
-            <legend>Interesses</legend>
-            <label>
-                <input type="checkbox" name="assunto" value="Blog">
-                IA
-            </label>
-            <label>
-                <input type="checkbox" name="assunto" value="Serviço">
-                Big Data
-            </label>
-            <label>
-                <input type="checkbox" name="assunto" value="Serviço">
-                Machine Learning
-            </label>
-            <label>
-                <input type="checkbox" name="assunto" value="Outro">
-                Outro
-                <input type="text" name="outro-assunto">
-            </label>
-        </fieldset>
+            <fieldset>
+                <legend>Interesses</legend>
+                <label>
+                    <input type="checkbox" name="assunto" value="Blog">
+                    IA
+                </label>
+                <label>
+                    <input type="checkbox" name="assunto" value="Serviço">
+                    Big Data
+                </label>
+                <label>
+                    <input type="checkbox" name="assunto" value="Serviço">
+                    Machine Learning
+                </label>
+                <label>
+                    <input type="checkbox" name="assunto" value="Outro">
+                    Outro
+                    <input type="text" name="outro-assunto">
+                </label>
+            </fieldset>
 
-        <label for="mensagem">Por que você quer participar?</label>
-        <textarea id="mensagem" name="mensagem" cols="60" rows="10" placeholder="Digite aqui sua mensagem"></textarea>
-        <button type="submit">Enviar mensagem</button>
-    </form>
+            <label for="mensagem">Por que você quer participar?</label>
+            <textarea id="mensagem" name="mensagem" cols="60" rows="10"
+                placeholder="Digite aqui sua mensagem"></textarea>
+            <button class="botao-inscricao" type="submit">Enviar mensagem</button>
+        </form>
+    </main>
 
     <footer>
         <h2>Compasso Tecnologia LTDA.</h2>
