@@ -2,13 +2,13 @@ body {
     display: block;
 }
 
-.titulo-principal, .texto-inscricao {
+.titulo-inscricao, .texto-inscricao {
     text-align: center;
     font-family: 'Open Sans Condensed', sans-serif;
     padding: 2rem;
 }
 
-.titulo-principal {
+.titulo-inscricao {
     background-color: #12477b;
     color: #FFF;
     text-transform: uppercase;

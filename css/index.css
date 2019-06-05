@@ -7,6 +7,7 @@ body {
             perspective: 6px;
     -webkit-perspective-origin: 50% 160px;
             perspective-origin: 50% 160px;
+    line-height: normal;
 }
 
 .titulo-principal {
@@ -114,6 +115,8 @@ body {
 footer {
     background-color: #000;
     color: #FFF;
+    display: block;
+    padding: 2em;
 }
 footer h2 {
     font-family: "Open Sans", sans-serif;
