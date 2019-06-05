@@ -1,0 +1,30 @@
+body {
+    font-family: "Open Sans Condensed", "Times New Roman", serif;
+    background-color: #F2FFFC;
+    font-size: 100%;
+    display: inline-block;
+    flex-wrap: wrap;
+}
+
+h2 {
+    font-family: "Open Sans Condensed", "Arial", sans-serif;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 3em;
+    text-shadow: 3px 3px #000;
+}
+
+.titulo-principal {
+    text-align: center;
+    background-color: #12477b;
+    font-family: "Open Sans", sans-serif;
+    color: #FFF;
+    padding: 2rem;
+}
+
+span {
+    font-family: "Shadows Into Light";
+}
+
