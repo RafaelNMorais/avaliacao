@@ -2,10 +2,24 @@ body {
     display: block;
 }
 
-.titulo-inscricao, .texto-inscricao {
-    text-align: center;
+.container {
+    width: 80ch;
+    margin-left: auto;
+    margin-right: auto;
     font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.titulo-inscricao, .texto-inscricao {
+    font-family: 'Open Sans Condensed', sans-serif;   
     padding: 2rem;
+}
+
+.titulo-inscricao {
+    text-align: center;
+}
+
+.texto-inscricao{
+    padding-left: 0;
 }
 
 .titulo-inscricao {
@@ -21,6 +35,7 @@ body {
 }
 
 .botao-inscricao {
+    border: 0;
     font-size: 1.25em;
     background-color: #12477b;
     color: #FFF;
@@ -29,4 +44,56 @@ body {
     margin: 2em auto;
     display: block;
     text-align: center;
+}
+
+.interesses, .disponibilidade {
+    margin-bottom: .5em;
+    font-weight: bold;
+    padding-top: 1.5em
+}
+
+label {
+    position: relative;
+    margin-bottom: 0;
+}
+
+.input-nome, .input-email {
+    display: block;
+    width: 100%;
+    font-size: 100%;
+    padding: .25em .5em;
+    margin-top: .3em;
+}
+
+.input-nome {
+    margin-bottom: .5em;
+}
+
+.input-email {
+    margin-bottom: 1em;
+}
+
+.participar {
+    margin-top: 1.5em;
+}
+
+.participar label {
+    font-weight: bold;
+}
+
+.participar textarea {
+    margin-top: .5em;
+    padding: .25em .5em;
+    width: 100%;
+}
+
+input[value="Outro"] + input {
+    display: none;
+}
+input[value="Outro"]:checked + input {
+    display: block;
+    width: 100%;
+    font-size: 100%;
+    padding: .25em .5em;
+    margin-top: .3em;
 }
