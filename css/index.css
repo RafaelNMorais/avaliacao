@@ -1,25 +1,37 @@
-html,body {
-    overflow-x: hidden;
-    height: 100%;
-}
 body {
     -webkit-perspective: 6px;
             perspective: 6px;
     -webkit-perspective-origin: 50% 160px;
             perspective-origin: 50% 160px;
-    line-height: normal;
+            font-family: "Open Sans Condensed", sans-serif;
+            background-color: #F2FFFC;
 }
 
 .titulo-principal {
-    -webkit-transform-style: preserve-3d;
-            transform-style: preserve-3d;
     position: relative;
     line-height: 5.0;
+    text-align: center;
+    background-color: #12477b;
+    font-family: "Open Sans Condensed", sans-serif;
+    color: #FFF;
+    padding: 2rem;
 }
 
-.palavras-home {
-    -webkit-transform-style: preserve-3d;
-            transform-style: preserve-3d;
+h1 {
+    text-transform: uppercase;
+    font-size: 3em;
+    text-shadow: 3px 3px #000;
+}
+
+h1,h2 {
+    font-family: "Open Sans Condensed", sans-serif;
+}
+
+span {
+    font-family: "Shadows Into Light";
+}
+
+.palavras-index {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -27,15 +39,14 @@ body {
     left: 0;
 }
 
-.palavra-home {
+.palavra-index {
     font-family: "Shadows Into Light", cursive;
     font-weight: bold;
     font-size: 400%;
     color: rgba(255, 127, 127, .5);
     position: absolute;
-    -webkit-animation: aparece 2s;
-            animation: aparece 2s;
 }
+
 .ia {
     top: 50%;
     left: 60%;
@@ -112,16 +123,112 @@ body {
     opacity: .6;
 }
 
+main {
+    width: 100%;
+    padding-bottom: 0;
+    float: none;
+    padding-bottom: 4em;
+    flex-grow: 1;
+}
+
+main p {
+    text-align: justify;
+    margin: 1em 0;
+}
+
+.container {
+    width: 100ch;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    padding: 1.5em 0;
+}
+
+p {
+    font-family: "Open Sans Condensed", sans-serif;
+}
+
+.btn-saibamais {
+    font-family: "Open Sans Condensed", sans-serif;
+    text-transform: uppercase;
+    background-color: #12477b;;
+    color: #FFF;
+    padding: .5em;
+    width: 30ch;
+    margin: 2em auto;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.vertentes {
+    background-color: #12477b;
+    border-bottom: .5em solid #000;
+    background-size: 20px 20px;
+    background-attachment: fixed;
+}
+
+.vertentes h2 {
+    text-align: center;
+    background-color: #12477b;
+    font-family: "Open Sans Condensed", sans-serif;
+    color: #FFF;
+}
+
+.vertentes ul {
+    display: -webkit-flex;
+    display: flex;
+}
+
+.vertentes li {
+    -webkit-flex: auto;
+    flex: auto;
+    border: 1px;
+    margin: 20px;
+}
+
+.img1 {
+    order: 1;
+}
+
+.img2 {
+    order: 2;
+    transform: scale(1.5);
+}
+
+.img3{
+    order: 3;
+}
+
+.vertentes img {
+    display: block;
+    width: 100%;
+}
+
+.btn-facaparte {
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    background-color: #FFF;
+    color: #12477b;
+    padding: .5em;
+    width: 30ch;
+    margin: 2em auto;
+    display: block;
+    text-align: center;
+}
+
 footer {
     background-color: #000;
     color: #FFF;
     display: block;
     padding: 2em;
 }
+
 footer h2 {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans Condensed", sans-serif;
     font-size: 3em;
 }
+
 footer a {
     color: #12477b;
     display: block;
