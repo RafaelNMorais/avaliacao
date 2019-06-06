@@ -37,7 +37,7 @@ form {
 }
 
 .botao-inscricao {
-    border: .1em solid #12477b;
+    border: 0;
     font-size: 1.25em;
     background-color: #12477b;
     color: #FFF;

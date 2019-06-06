@@ -245,4 +245,5 @@ footer a:focus {
 .botao-efeito:hover {
     background-color: #FFF;
     color: #12477b;
+    border: .1em solid #12477b;
 }
