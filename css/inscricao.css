@@ -2,15 +2,17 @@ body {
     display: block;
 }
 
-.container {
-    width: 80ch;
-    margin-left: auto;
-    margin-right: auto;
+form {
     font-family: 'Open Sans Condensed', sans-serif;
 }
 
+.container-inscricao {
+    width: 80ch;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .titulo-inscricao, .texto-inscricao {
-    font-family: 'Open Sans Condensed', sans-serif;   
     padding: 2rem;
 }
 
@@ -35,13 +37,14 @@ body {
 }
 
 .botao-inscricao {
-    border: 0;
+    border: .1em solid #12477b;
     font-size: 1.25em;
     background-color: #12477b;
     color: #FFF;
     padding: .5em;
     width: 40ch;
     margin: 2em auto;
+    margin-top: 1em;
     display: block;
     text-align: center;
 }
