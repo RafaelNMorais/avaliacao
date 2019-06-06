@@ -30,7 +30,6 @@ span {
 }
 
 .palavras-index {
-    position: absolute;
     bottom: 0;
     right: 0;
     top: 0;
@@ -41,7 +40,7 @@ span {
     font-family: "Shadows Into Light", cursive;
     font-weight: bold;
     font-size: 400%;
-    color: rgba(255, 127, 127, .5);
+    color: rgb(93, 170, 243);
     position: absolute;
 }
 
@@ -123,37 +122,33 @@ span {
 
 main {
     width: 100%;
-    padding-bottom: 0;
     float: none;
-    padding-bottom: 4em;
     flex-grow: 1;
-}
-
-main p {
-    text-align: justify;
-    margin: 1em 0;
 }
 
 .container {
     width: 100ch;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 30px;
     padding: 1.5em 0;
 }
 
-p {
+.container p {
     font-family: "Open Sans Condensed", sans-serif;
+    text-align: justify;
+    margin: 1em;
+    margin-top: 3em;
 }
 
 .btn-saibamais {
     font-family: "Open Sans Condensed", sans-serif;
     text-transform: uppercase;
-    background-color: #12477b;;
+    background-color: #12477b;
     color: #FFF;
     padding: .5em;
     width: 30ch;
     margin: 2em auto;
+    margin-top: 4em;
     display: block;
     text-align: center;
     text-decoration: none;
@@ -161,46 +156,51 @@ p {
 
 .vertentes {
     background-color: #12477b;
-    border-bottom: .5em solid #000;
-    background-size: 20px 20px;
-    background-attachment: fixed;
+    border-bottom: 1em solid #12477b;
 }
 
 .vertentes h2 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     text-align: center;
-    background-color: #12477b;
     font-family: "Open Sans Condensed", sans-serif;
     color: #FFF;
+    text-transform: uppercase;
+    font-size: 3em;
+    text-shadow: 3px 3px #000;
 }
 
 .vertentes ul {
-    display: -webkit-flex;
     display: flex;
-}
-
-.vertentes li {
-    -webkit-flex: auto;
-    flex: auto;
-    border: 1px;
-    margin: 20px;
+    flex-flow: row;
+    justify-content: center;
 }
 
 .img1 {
     order: 1;
+    width: 550px;
+    margin-left: 20px;
 }
 
 .img2 {
     order: 2;
-    transform: scale(1.5);
+    transform: scale(1.1);
 }
 
-.img3{
+.img3 {
     order: 3;
+    width: 550px;
+    margin-right: 20px;
+    
 }
 
 .vertentes img {
-    display: block;
     width: 100%;
+    border: 3px solid black;
+}
+
+.vertentes img:hover, .vertentes img:focus {
+    border: 5px solid #FFF;
 }
 
 .btn-facaparte {
@@ -210,9 +210,10 @@ p {
     color: #12477b;
     padding: .5em;
     width: 30ch;
-    margin: 2em auto;
+    margin: 3em auto;
     display: block;
     text-align: center;
+    text-decoration: none;
 }
 
 footer {
