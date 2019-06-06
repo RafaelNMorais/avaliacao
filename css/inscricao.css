@@ -97,3 +97,18 @@ input[value="Outro"]:checked + input {
     padding: .25em .5em;
     margin-top: .3em;
 }
+
+.texto:focus {
+    border: 1px solid #12477b;
+    box-shadow: 0 0 3px #12477b;
+}
+
+.texto:valid {
+    border: 1px solid green;
+    box-shadow: 0 0 3px green;
+}
+
+.texto:invalid {
+    border: 1px solid red;
+    box-shadow: 0 0 3px red;
+}

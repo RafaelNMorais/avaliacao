@@ -28,10 +28,10 @@
             <form>
                 <fieldset class="formulario-um">
                     <label for="nome">Nome completo</label>
-                    <input class="input-nome" id="nome" type="text" name="nome" required autofocus
+                    <input class="input-nome texto" id="nome" type="text" name="nome" required autofocus
                         pattern="[A-Za-z ']{4,}" title="O nome precisa ter pelo menos 4 caracteres">
                     <label for="email">E-mail</label>
-                    <input class="input-email" id="email" type="email" name="email" required
+                    <input class="input-email texto" id="email" type="email" name="email" required
                         placeholder="seu@email.com">
                 </fieldset>
 
@@ -52,7 +52,7 @@
                     <label>
                         <input type="radio" name="assunto" value="Outro">
                         Personalizar
-                        <input type="text" name="outro-assunto">
+                        <input class="texto" type="text" name="outro-assunto">
                     </label>
                 </fieldset>
 
@@ -73,7 +73,7 @@
                     <label>
                         <input type="checkbox" name="assunto" value="Outro">
                         Outro
-                        <input type="text" name="outro-assunto">
+                        <input class="texto" type="text" name="outro-assunto">
                     </label>
                 </fieldset>
 
