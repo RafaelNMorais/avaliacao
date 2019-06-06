@@ -204,7 +204,7 @@ main {
 }
 
 .btn-facaparte {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans Condensed", sans-serif;
     text-transform: uppercase;
     background-color: #FFF;
     color: #12477b;
@@ -233,6 +233,7 @@ footer a {
     display: block;
     margin-top: 1em;
     font-size: large;
+    width: 0;
 }
 
 footer a:hover,
@@ -245,4 +246,12 @@ footer a:focus {
 .botao-efeito:hover {
     background-color: #FFF;
     color: #12477b;
+    border: .1em solid #12477b;
+}
+
+.botao-efeito-saber:focus,
+.botao-efeito-saber:hover {
+    background-color: #12477b;
+    color: #FFF;
+    border: .1em solid #FFF;
 }
