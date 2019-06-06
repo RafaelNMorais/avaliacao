@@ -20,65 +20,72 @@
     </header>
 
     <main>
-        <div class="texto-inscricao">
-            <p>Faça parte desse time se inscrevendo na próxima edição do programa de bolsas.</p>
+        <div class="container">
+            <div class="texto-inscricao">
+                <p>Faça parte desse time se inscrevendo na próxima edição do programa de bolsas.</p>
+            </div>
+
+            <form>
+                <fieldset class="formulario-um">
+                    <label for="nome">Nome completo</label>
+                    <input class="input-nome" id="nome" type="text" name="nome" required autofocus
+                        pattern="[A-Za-z ']{4,}" title="O nome precisa ter pelo menos 4 caracteres">
+                    <label for="email">E-mail</label>
+                    <input class="input-email" id="email" type="email" name="email" required
+                        placeholder="seu@email.com">
+                </fieldset>
+
+                <fieldset>
+                    <legend class="disponibilidade">Maior disponibilidade</legend>
+                    <label>
+                        <input type="radio" name="assunto" value="Blog">
+                        Manhã
+                    </label>
+                    <label>
+                        <input type="radio" name="assunto" value="Serviço">
+                        Tarde
+                    </label>
+                    <label>
+                        <input type="radio" name="assunto" value="Serviço">
+                        Noite
+                    </label>
+                    <label>
+                        <input type="radio" name="assunto" value="Outro">
+                        Personalizar
+                        <input type="text" name="outro-assunto">
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend class="interesses">Interesses</legend>
+                    <label>
+                        <input type="checkbox" name="assunto" value="Blog">
+                        IA
+                    </label>
+                    <label>
+                        <input type="checkbox" name="assunto" value="Serviço">
+                        Big Data
+                    </label>
+                    <label>
+                        <input type="checkbox" name="assunto" value="Serviço">
+                        Machine Learning
+                    </label>
+                    <label>
+                        <input type="checkbox" name="assunto" value="Outro">
+                        Outro
+                        <input type="text" name="outro-assunto">
+                    </label>
+                </fieldset>
+
+                <div class="participar">
+                    <label for="mensagem">Por que você quer participar?</label>
+                    <textarea id="mensagem" name="mensagem" cols="60" rows="10"
+                        placeholder="Digite aqui sua mensagem"></textarea>
+                </div>
+
+                <button class="botao-inscricao" type="submit">Enviar mensagem</button>
+            </form>
         </div>
-        <form>
-            <fieldset>
-                <label for="nome">Nome completo</label>
-                <input id="nome" type="text" name="nome" required autofocus pattern="[A-Za-z ']{4,}"
-                    title="O nome precisa ter pelo menos 4 caracteres">
-                <label for="email">E-mail</label>
-                <input id="email" type="email" name="email" required placeholder="seu@email.com">
-            </fieldset>
-
-            <fieldset>
-                <legend>Maior disponibilidade</legend>
-                <label>
-                    <input type="radio" name="assunto" value="Blog">
-                    Manhã
-                </label>
-                <label>
-                    <input type="radio" name="assunto" value="Serviço">
-                    Tarde
-                </label>
-                <label>
-                    <input type="radio" name="assunto" value="Serviço">
-                    Noite
-                </label>
-                <label>
-                    <input type="radio" name="assunto" value="Outro">
-                    Personalizar
-                    <input type="text" name="outro-assunto">
-                </label>
-            </fieldset>
-
-            <fieldset>
-                <legend>Interesses</legend>
-                <label>
-                    <input type="checkbox" name="assunto" value="Blog">
-                    IA
-                </label>
-                <label>
-                    <input type="checkbox" name="assunto" value="Serviço">
-                    Big Data
-                </label>
-                <label>
-                    <input type="checkbox" name="assunto" value="Serviço">
-                    Machine Learning
-                </label>
-                <label>
-                    <input type="checkbox" name="assunto" value="Outro">
-                    Outro
-                    <input type="text" name="outro-assunto">
-                </label>
-            </fieldset>
-
-            <label for="mensagem">Por que você quer participar?</label>
-            <textarea id="mensagem" name="mensagem" cols="60" rows="10"
-                placeholder="Digite aqui sua mensagem"></textarea>
-            <button class="botao-inscricao" type="submit">Enviar mensagem</button>
-        </form>
     </main>
 
     <footer>

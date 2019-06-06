@@ -7,7 +7,6 @@ body {
             perspective: 6px;
     -webkit-perspective-origin: 50% 160px;
             perspective-origin: 50% 160px;
-    line-height: normal;
 }
 
 .titulo-principal {
