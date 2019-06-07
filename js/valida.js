@@ -1,10 +1,10 @@
-var campo = $('.input-nome');
+//var campo = $('.input-nome');
 
-function inicializaContadores() {
-    campo.on("input", function () {
-        var conteudo = campo.val();
+//function inicializaContadors() {     
+//campo.on("input", function () {
+//        var conteudo = campo.val();
 
-        var qtdPalavras = conteudo.split(/\S+/).length - 1;
-        $("#contador-palavras").text(qtdPalavras);
-    });
-}
+ //       var qtdPalavras = conteudo.split(/\S+/).length - 1;
+//        $("#contador-palvra).t e x t(qtdPalavras);
+//});
+//}
