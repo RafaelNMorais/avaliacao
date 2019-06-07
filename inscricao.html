@@ -29,7 +29,7 @@
                 <fieldset class="formulario-um">
                     <label for="nome">Nome completo</label>
                     <input class="input-nome texto" id="nome" type="text" name="nome" required autofocus
-                        pattern="[A-Za-z ']{4,}" title="O nome precisa ter pelo menos 4 caracteres">
+                        pattern="[A-Za-z ']{2,}" title="O nome precisa ter pelo menos 2 caracteres">
                     <label for="email">E-mail</label>
                     <input class="input-email texto" id="email" type="email" name="email" required
                         placeholder="seu@email.com">
@@ -38,7 +38,7 @@
                 <fieldset>
                     <legend class="disponibilidade">Maior disponibilidade</legend>
                     <label>
-                        <input type="radio" name="assunto" value="Blog">
+                        <input type="radio" name="assunto" value="Blog" required>
                         Manhã
                     </label>
                     <label>
@@ -56,7 +56,7 @@
                     </label>
                 </fieldset>
 
-                <fieldset>
+                <div>
                     <legend class="interesses">Interesses</legend>
                     <label>
                         <input type="checkbox" name="assunto" value="Blog">
@@ -75,11 +75,11 @@
                         Outro
                         <input class="texto" type="text" name="outro-assunto">
                     </label>
-                </fieldset>
+                </div>
 
                 <div class="participar">
                     <label for="mensagem">Por que você quer participar?</label>
-                    <textarea id="mensagem" name="mensagem" cols="60" rows="10"
+                    <textarea id="mensagem" name="mensagem" required minlength=140 cols="60" rows="10"
                         placeholder="Digite aqui sua mensagem"></textarea>
                 </div>
 

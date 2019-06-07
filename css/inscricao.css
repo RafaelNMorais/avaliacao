@@ -99,8 +99,8 @@ input[value="Outro"]:checked + input {
 }
 
 .texto:focus {
-    border: 1px solid #12477b;
-    box-shadow: 0 0 3px #12477b;
+    border: 1px solid yellow;
+    box-shadow: 0 0 3px yellow;
 }
 
 .texto:valid {
