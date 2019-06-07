@@ -1,10 +1,20 @@
-var campo = $('.input-nome');
+const cbIa = $('.cb-ia');
+const cbBigData = $('.cb-big-data');
+const cbMachine = $('.cb-machine');
+const cbOutro = $('.cb-outro');
 
-function inicializaContadores() {
-    campo.on("input", function () {
-        var conteudo = campo.val();
+function validaCb() {
+    if (cbIa.checked || cbBigData.checked || cbMachine.checked || cbOutro.checked) {
+        return true;
+    } else {
+        return false;
+    }
+}
 
-        var qtdPalavras = conteudo.split(/\S+/).length - 1;
-        $("#contador-palavras").text(qtdPalavras);
-    });
+function name(params) {
+
+}
+
+function enviaFormulario() {
+    document.getElementById("dados").submit();
 }

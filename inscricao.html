@@ -25,7 +25,7 @@
                 <p>Faça parte desse time se inscrevendo na próxima edição do programa de bolsas.</p>
             </div>
 
-            <form>
+            <form class="dados">
                 <fieldset class="formulario-um">
                     <label for="nome">Nome completo</label>
                     <input class="input-nome texto" id="nome" type="text" name="nome" required autofocus
@@ -59,19 +59,19 @@
                 <div>
                     <legend class="interesses">Interesses</legend>
                     <label>
-                        <input type="checkbox" name="assunto" value="Blog">
+                        <input class="cb-ia" type="checkbox" name="assunto" value="Blog">
                         IA
                     </label>
                     <label>
-                        <input type="checkbox" name="assunto" value="Serviço">
+                        <input class="cb-big-data" type="checkbox" name="assunto" value="Serviço">
                         Big Data
                     </label>
                     <label>
-                        <input type="checkbox" name="assunto" value="Serviço">
+                        <input class="cb-machine" type="checkbox" name="assunto" value="Serviço">
                         Machine Learning
                     </label>
                     <label>
-                        <input type="checkbox" name="assunto" value="Outro">
+                        <input class="cb-outro" type="checkbox" name="assunto" value="Outro">
                         Outro
                         <input class="texto" type="text" name="outro-assunto">
                     </label>
@@ -79,11 +79,12 @@
 
                 <div class="participar">
                     <label for="mensagem">Por que você quer participar?</label>
-                    <textarea id="mensagem" name="mensagem" required minlength=140 cols="60" rows="10"
+                    <textarea id="mensagem" name="mensagem" required minlength=1 cols="60" rows="10"
                         placeholder="Digite aqui sua mensagem"></textarea>
                 </div>
 
-                <button class="botao-efeito botao-inscricao" type="submit">Enviar mensagem</button>
+                <button onclick="alert('teste')" class="botao-efeito botao-inscricao" type="submit">Enviar
+                    mensagem</button>
             </form>
         </div>
     </main>
