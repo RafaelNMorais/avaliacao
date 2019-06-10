@@ -38,15 +38,15 @@
                 <fieldset>
                     <legend class="disponibilidade">Maior disponibilidade</legend>
                     <label>
-                        <input type="radio" name="assunto" value="Blog" required>
+                        <input id="r-manha" type="radio" name="assunto" value="Manha" required>
                         Manhã
                     </label>
                     <label>
-                        <input type="radio" name="assunto" value="Serviço">
+                        <input id="r-tarde" type="radio" name="assunto" value="Tarde">
                         Tarde
                     </label>
                     <label>
-                        <input type="radio" name="assunto" value="Serviço">
+                        <input id="r-noite" type="radio" name="assunto" value="Noite">
                         Noite
                     </label>
                     <label>
@@ -59,19 +59,19 @@
                 <div>
                     <legend class="interesses">Interesses</legend>
                     <label>
-                        <input class="cb-ia" type="checkbox" name="assunto" value="Blog">
+                        <input id="cb-ia" type="checkbox" name="assunto" value="ia">
                         IA
                     </label>
                     <label>
-                        <input class="cb-big-data" type="checkbox" name="assunto" value="Serviço">
+                        <input id="cb-big-data" type="checkbox" name="assunto" value="big-data">
                         Big Data
                     </label>
                     <label>
-                        <input class="cb-machine" type="checkbox" name="assunto" value="Serviço">
+                        <input id="cb-machine" type="checkbox" name="assunto" value="machine-learning">
                         Machine Learning
                     </label>
                     <label>
-                        <input class="cb-outro" type="checkbox" name="assunto" value="Outro">
+                        <input id="cb-outro" type="checkbox" name="assunto" value="Outro">
                         Outro
                         <input class="texto" type="text" name="outro-assunto">
                     </label>
@@ -83,7 +83,7 @@
                         placeholder="Digite aqui sua mensagem"></textarea>
                 </div>
 
-                <button onclick="alert('teste')" class="botao-efeito botao-inscricao" type="submit">Enviar
+                <button class="botao-efeito botao-inscricao" type="submit">Enviar
                     mensagem</button>
             </form>
         </div>
