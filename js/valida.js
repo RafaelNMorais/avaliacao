@@ -58,6 +58,7 @@ function validaCb() {
 function enviaFormulario() {
     validaCb();
     validaRadio();
+    criaJson();
     document.getElementById("dados").submit();
 }
 
