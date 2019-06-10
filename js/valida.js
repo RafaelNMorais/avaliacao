@@ -64,7 +64,7 @@ function enviaFormulario() {
 function sucesso() {
     var mensagem = "Inscrição enviada. Aguarde novos detalhes em seu e-mail ";
     var email = document.getElementById('email').value;
-    document.getElementById('sucesso').innerHTML = mensagem + email;
+    alert(mensagem + email);
     return true;
 }
 
