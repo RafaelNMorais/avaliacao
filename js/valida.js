@@ -59,7 +59,15 @@ function enviaFormulario() {
     validaCb();
     validaRadio();
     criaJson();
+    console.log(criaJson);
     document.getElementById("dados").submit();
+}
+
+function sucesso() {
+    var mensagem = "Inscrição enviada. Aguarde novos detalhes em seu e-mail ";
+    var email = document.getElementById('email').value;
+    alert(mensagem + email);
+    return true;
 }
 
 function validaRadio() {
@@ -70,4 +78,16 @@ function validaRadio() {
         console.log("Não pronto");
         return false;
     }
+}
+
+function criaJson() {
+    let nome = document.getElementById('nome').value;
+    let email = document.getElementById('email').value;
+    let diponibilidade = validaRadio();
+    let interesse = validaCb();
+    let participar = document.getElementById('mensagem').value;
+
+    let json = [nome, email, diponibilidade, interesse, participar];
+
+    return json;
 }
